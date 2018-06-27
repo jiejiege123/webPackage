@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css" media="screen">
+    	.imgBox{
+    		padding: 0 10%;
+
+    	}
+    </style>
+</head>
+<body>
+	<div class="imgBox" id="imgBox">
+		<div class="imgItem">
+			<figure>
+			<img src="images/1.jpg" alt="" class="l_img">
+				<figcaption>旅行工作</figcaption>
+			</figure>
+		</div>
+		<div class="imgItem">
+			<figure>
+				<img src="images/2.jpg" alt="" class="l_img">
+				<figcaption>旅行工作</figcaption>
+			</figure>
+		</div>
+		<div class="imgItem">
+			<figure>
+				<img src="images/3.jpg" alt="" class="l_img">
+				<figcaption>旅行工作</figcaption>
+			</figure>
+		</div>
+		<div class="imgItem">
+			<figure>
+				<img src="images/4.jpg" alt="" class="l_img">
+				<figcaption>旅行工作</figcaption>
+			</figure>
+		</div>
+		<div class="imgItem">
+			<figure>
+				<img src="images/5.jpg" alt="" class="l_img">
+				<figcaption>旅行工作</figcaption>
+			</figure>
+		</div>
+		<div class="imgItem">
+			<figure>
+				<img src="images/3.jpg" alt="" class="l_img">
+				<figcaption>旅行工作</figcaption>
+			</figure>
+		</div>
+	</div>
+	<br><br><br>
+	<div class="imgBox">
+		<div class="imgItem">
+			<figure>
+			<img src="images/11.jpg" alt="" class="l_img">
+				<figcaption>旅行工作</figcaption>
+			</figure>
+		</div>
+		<div class="imgItem">
+			<figure>
+				<img src="images/12.jpg" alt="" class="l_img">
+				<figcaption>旅行工作</figcaption>
+			</figure>
+		</div>
+		<div class="imgItem">
+			<figure>
+				<img src="images/13.jpg" alt="" class="l_img">
+				<figcaption>旅行工作</figcaption>
+			</figure>
+		</div>
+	</div>
+<script type="text/javascript" src="JavaScript/jquery-3.2.1.js"></script>
+<script src="JavaScript/js.js"></script>
+<script type="text/javascript">
+	//使用方法：选定灯箱和子的，通过lb(elem).Lightbox({ifChange:true/fales},...) ifchange改变是否可以点击上下页
+	var im = document.getElementsByClassName('imgBox')[1];
+	var imgg = document.getElementsByClassName('imgBox')[0];
+	lb(im).Lightbox({
+		ifChange: false
+	});
+	lb(imgg).Lightbox({
+		ifChange: true
+	});
+</script>
+</body>
+</html>
